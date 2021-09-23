@@ -1,3 +1,8 @@
+#Shyne Choi
+#SoftDev
+#K<nn> -- ClassList/an introduction to python/fns to use inputs to fill up lists + prints a random name
+#2021-09-22
+
 import random
 
 pd1 = []
@@ -19,11 +24,6 @@ def addToList():
     print("The student's name is " + name + " and their period is " + str(period) + ".")
 
 def printList():
-    all = []
-    all.extend(pd1)
-    all.extend(pd2)
+    all = pd1 + pd2
+    print (all[random.randrange(len(all))])
 
-    print (all)
-
-# addToList()
-# printList()

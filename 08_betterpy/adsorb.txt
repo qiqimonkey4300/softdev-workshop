@@ -1,0 +1,9 @@
+QUESTIONS:
+- 
+
+COMMENTS:
+- compact vs loose style and spacing
+- separating different parts into different functions before using a main/test to combine and use all the functions vs putting it all together
+
+CONCERNS:
+n/a

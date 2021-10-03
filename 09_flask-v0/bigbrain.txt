@@ -1,0 +1,15 @@
+Cheap Bun Bun - William Chen, Cheap, Shyne Choi, Bun Bun
+SoftDev
+K09 -- Simple Path to Greatness/Flask Running Intro
+2021-10-02
+
+Q0:  In Java, we did something similar whenever we made a new object. Though in Java, we would add other parts in Java like in Random rand = new Random().
+Q1: ‘/’ reminds me of path directories
+Q2: It should print in the terminal - or wherever it’s being run. Or it will make a pop up Q3: The name of the program
+Q3: It shouldn’t appear anywhere
+Q4: Running methods in Java from a certain class looked like this
+
+Comments after running:
+The program didn’t print in the terminal or make a pop up. It showed up on a web address that we had to copy into our browser.
+It didn’t print the name of the program. 
+“No hablo queso!” was printed on the website that resulted.

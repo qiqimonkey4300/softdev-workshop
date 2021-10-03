@@ -1,5 +1,5 @@
-# softdev-workshop
-
+# workshop of Shyne Choi
+### SoftDev 2021-2022
 # Ubun3 Shyne Choi, Aaron Contreras, Sadid Ethun K06 Explanation
 **File I/O:** We started by saving the csv file in the same directory, and we used the csv.reader to read the file and split up each line. This directly filtered through each line in the file, identifying the job and the percentage. We then stored the job/percentage pairs into a dictionary for later use. 
 

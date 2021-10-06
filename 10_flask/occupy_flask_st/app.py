@@ -1,6 +1,7 @@
-# Clyde 'Thluffy' Sinclair
+# ubun3: Shyne Choi, Aaron Contreras, Sadid Ethun
 # SoftDev
-# Oct 2021
+# K10 -- Putting Little Pieces Together / Flask Occupations
+# 2021-10-05
 
 import csv
 import random
@@ -11,14 +12,15 @@ app = Flask(__name__) #create instance of class Flask
 def open_file():
     # Opens file and formats into dictionary as Job Class: Percentage
 
-    with open('occupations.csv', newline='') as f:
+    with open('occupations.csv', newline = '') as f:
          reader = csv.reader(f)
          next(reader) #skips the first line
 
          occupations = {}
 
          for row in reader: #for each line in the file
-            occupations[row[0]] = float(row[1])
+            if row[0] != "Total":
+                occupations[row[0]] = float(row[1])
 
     return occupations
 
@@ -38,8 +40,17 @@ def get_random(di):
 @app.route("/")       #assign fxn to route
 
 def occupation_output():
-    return(get_random(open_file()))
+    occ_file = open_file()
 
-if __name__ == "__main__":  # true if this file NOT imported
-    app.debug = True        # enable auto-reload upon code change
-    app.run()
+    x = "Random occupation: " + get_random(occ_file) + "<br><br><br>" + "List of Occupations:<ul>"
+
+    for key in occ_file:
+        x += "<li>" + key + "</li>"
+
+    x += "</ul>"
+
+    return(x)
+
+
+app.debug = True        # enable auto-reload upon code change
+app.run()

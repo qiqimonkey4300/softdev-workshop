@@ -1,0 +1,10 @@
+# ubun3: Shyne Choi, Aaron Contreras, Sadid Ethun
+# SoftDev
+# K11 -- Some Things Never Change / Static Flask
+# 2021-10-06
+
+Prediction: Accessing the file via http://localhost:5000/static/foo will open the foo.html file in the static directory. 
+
+Actual: Clicking the address makes us download the foo file. 
+On Firefox it opens the address bit displays nothing. On Chrome it only downloads the file. 
+If we change the ending of the address to foo.html, it'll display the html.

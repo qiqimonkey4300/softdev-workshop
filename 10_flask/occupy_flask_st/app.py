@@ -40,13 +40,19 @@ def get_random(di):
 @app.route("/")       #assign fxn to route
 
 def occupation_output():
-    occ_file = open_file()
+    occ_file = open_file() # make list of occupations, call it occ_file
 
-    x = "Random occupation: " + get_random(occ_file) + "<br><br><br>" + "List of Occupations:<ul>"
+    # x is the string we'll be returning aka what will be on the link
+    x = "ubun3: Shyne Choi, Aaron Contreras, Sadid Ethun<br><br><br>"
 
+    # start ul
+    x += "Random occupation: " + get_random(occ_file) + "<br><br><br>" + "List of Occupations:<ul>"
+
+    # for each key in the list of occupations made earlier, we'll add it to x
     for key in occ_file:
         x += "<li>" + key + "</li>"
 
+    # finish the unordered list (that's what ul stands for)
     x += "</ul>"
 
     return(x)

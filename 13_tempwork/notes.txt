@@ -1,0 +1,8 @@
+Observations:
+- All three of us used different methods to achieve a weighted average
+-All of us separated the main file into different functions.
+- HTML vs combining everything in a single file for display
+- Different interpretations of the assignment list displayed
+EGO:
+-We decided that using HTML files for a table would be best
+-To be discussed tues

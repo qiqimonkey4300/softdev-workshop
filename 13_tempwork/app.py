@@ -1,4 +1,4 @@
-# Team Name: Aryaman Goenka, Shyne Choi, Zhao Yu Lin, Untitled, Bun bun, Timber
+# Team Herald: Aryaman Goenka, Shyne Choi, Zhao Yu Lin, Untitled, Bun bun, Timber
 # SoftDev
 # K13: Putting Little Pieces Together / Predicting rudimentary flask apps
 # 10-04-2021
@@ -39,6 +39,6 @@ def base_route():
 @app.route("/occupyflaskst")       #assign fxn to route
 def hello_world():
     choice, result = generateRandom(readfile("data/occupations.csv"))
-    return render_template('tablified.html', choice=choice, result=result)
+    return render_template('index.html', choice=choice, result=result)
 
-app.run(debug = True)
+app.run(debug=True)

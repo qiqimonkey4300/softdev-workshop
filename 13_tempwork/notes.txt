@@ -1,8 +1,19 @@
-Observations:
+Team Herald: Aryaman Goenka, Shyne Choi, Zhao Yu Lin, Untitled, Bun bun, Timber
+SoftDev
+K13: Putting Little Pieces Together / Predicting rudimentary flask apps
+10-04-2021
+
+QCC:
 - All three of us used different methods to achieve a weighted average
--All of us separated the main file into different functions.
+- All of us separated the main file into different functions.
 - HTML vs combining everything in a single file for display
 - Different interpretations of the assignment list displayed
+- We decided that using HTML files for a table would be best
+- Moving up the import and instantation lines in the app.py fixed our bugs in our html file 
+- We looped through a dict in the html file as opposed to hard coding all the data
 EGO:
--We decided that using HTML files for a table would be best
--To be discussed tues
+- Don't be too possessive of your code becuase if forcibly makes you more defensive of it against errors
+- Have multiple people review your code
+    - Makes reviewers better programmers in the process
+- Egoless Programming results in increased efficiency when multiple programmers can understand the code
+- As a reviewer you can also become attached to code so it's best to allow others to review it as well

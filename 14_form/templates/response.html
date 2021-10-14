@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <!--
-  Clyde 'Thluffy' Sinclair
-  SoftDev
-  Oct 2021
+     set: Shyne Choi, Ella Krechmer, Tina Nguyen
+     SoftDev
+     K14 ..Form and Function / We used customized form responses
+     2021-10-14
 
      simple demo of HTML forms via Flask
 
@@ -18,23 +19,11 @@
 <html>
 
   <head>
-    <title> LOGIN PAGE </title>
+    <title> RESPONSE PAGE </title>
   </head>
 
   <body>
-    <h1>
-      Welcome, Travelers of the Intertoobz!
-    </h1>
-
-
-    <h3>
-      Enter your username below to proceed.
-    </h3>
-    <form action="/auth">
-      <input type="text" name="username">
-      <input type="submit" name="sub1">
-    </form>
-    <br>
+      Hello, {{ username }}
   </body>
 
 </html>

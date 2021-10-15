@@ -1,4 +1,4 @@
-# set: Shyne Choi, Ella Krechmer, Tina Nguyen
+# setting the bar: Shyne Choi, Ella Krechmer, Tina Nguyen
 # SoftDev
 # K14 ..Form and Function / We used customized form responses
 # 2021-10-14
@@ -30,8 +30,8 @@ def disp_loginpage():
     # print(app)
     # print("***DIAG: request obj ***")
     # print(request)
-    # print("***DIAG: request.args ***")
-    # print(request.args)
+    print("***DIAG: request.args ***")
+    print(request.args)
     # print("***DIAG: request.args['username']  ***")
     # print(request.args['username'])
     # print("***DIAG: request.headers ***")
@@ -44,15 +44,15 @@ def authenticate():
     # print("\n\n\n")
     # print("***DIAG: this Flask obj ***")
     # print(app)
-    # print("***DIAG: request obj ***")
-    # print(request)
-    # print("***DIAG: request.args ***")
-    # print(request.args)
+    print("***DIAG: request obj ***")
+    print(request)
+    print("***DIAG: request.args ***")
+    print(request.args)
     print("***DIAG: request.args['username']  ***")
     print(request.args['username'])
     print("***DIAG: request.headers ***")
     print(request.headers)
-    return render_template( 'response.html', username=request.args['username'])  #response to a form submission
+    return render_template( 'response.html', username=request.args['username'], request=request)  #response to a form submission
 
 
 

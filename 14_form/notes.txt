@@ -1,0 +1,10 @@
+Setting the Bar: Shyne Choi, Ella Krechmer, Tina Nguyen
+SoftDev
+K14: Form and Function/making forms and printed a greeting using the form
+2021010-14
+
+-only creates a form in "/" because that's the only time you call render_template
+-once you submit it takes you to "/auth"
+-we wanted to use the variable username to return a greeting
+-ended up needing to use request.args['username'] in app.py
+-we weren't sure what was meant by "include request method used", after talking to classmates from both periods we came to a consensus that we should just return the request that was also printed in the terminal in the template app.py

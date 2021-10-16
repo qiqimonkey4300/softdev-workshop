@@ -1,4 +1,4 @@
-# setting the bar: Shyne Choi, Ella Krechmer, Tina Nguyen
+# Setting the Bar: Shyne Choi, Ella Krechmer, Tina Nguyen
 # SoftDev
 # K14 ..Form and Function / We used customized form responses
 # 2021-10-14
@@ -30,8 +30,8 @@ def disp_loginpage():
     # print(app)
     # print("***DIAG: request obj ***")
     # print(request)
-    print("***DIAG: request.args ***")
-    print(request.args)
+    # print("***DIAG: request.args ***")
+    # print(request.args)
     # print("***DIAG: request.args['username']  ***")
     # print(request.args['username'])
     # print("***DIAG: request.headers ***")
@@ -44,14 +44,19 @@ def authenticate():
     # print("\n\n\n")
     # print("***DIAG: this Flask obj ***")
     # print(app)
-    print("***DIAG: request obj ***")
-    print(request)
-    print("***DIAG: request.args ***")
-    print(request.args)
+    # print("***DIAG: request obj ***")
+    # print(request)
+    # print("***DIAG: request.args ***")
+    # print(request.args)
+
+    #prints username and headers in the terminal
     print("***DIAG: request.args['username']  ***")
     print(request.args['username'])
     print("***DIAG: request.headers ***")
     print(request.headers)
+
+    #authenicate will go to the response page which will use response.html
+    #we set username here so that it can be used in response.html in our greeting
     return render_template( 'response.html', username=request.args['username'])  #response to a form submission
 
 

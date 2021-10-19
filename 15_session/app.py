@@ -37,6 +37,8 @@ def disp_loginpage():
     # print(request.args['username'])
     # print("***DIAG: request.args['password']  ***")
     # print(request.args['password'])
+    if (len(session) != 0):
+        return render_template( 'response.html', username=session.get("username"))
     return render_template( 'login.html' )
 
 
@@ -72,8 +74,8 @@ def authenticate():
     # except if ((username!=myuser or password!=mypass)):
     #     return render_template( 'login.html' )
     #app.config['secret_key'] = os.urandom(32)
-    session[username] = password
-    if (session) or (username==myuser and password==mypass):
+    if (username==myuser and password==mypass):
+        session[username] = password
         return render_template( 'response.html', username=username)
     elif (username=="" or password==""):
         return render_template('login.html', error="Cannot submit blank username or password")

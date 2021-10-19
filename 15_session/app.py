@@ -6,11 +6,18 @@
 from flask import Flask             #facilitate flask webserving
 from flask import render_template   #facilitate jinja templating
 from flask import request           #facilitate form submission
+         #
+
+from random import *
+import os
 
 #the conventional way:
 #from flask import Flask, render_template, request
 
+from flask import session
 app = Flask(__name__)    #create Flask object
+app.secret_key = os.urandom(32)
+
 
 
 '''
@@ -52,6 +59,7 @@ def authenticate():
 
     myuser="settingthebar"
     mypass="intertoobz"
+
     #authenicate will go to the response page which will use response.html
     #we are retrieving entered username and password here
     username=request.args['username']
@@ -63,7 +71,9 @@ def authenticate():
     #     return render_template( 'response.html', username=request.args['username'], password=request.args['password'])  #response to a form submission
     # except if ((username!=myuser or password!=mypass)):
     #     return render_template( 'login.html' )
-    if (username==myuser and password==mypass):
+    #app.config['secret_key'] = os.urandom(32)
+    session[username] = password
+    if (session) or (username==myuser and password==mypass):
         return render_template( 'response.html', username=username)
     elif (username=="" or password==""):
         return render_template('login.html', error="Cannot submit blank username or password")

@@ -1,7 +1,7 @@
-#Clyde "Thluffy" Sinclair
-#SoftDev
-#skeleton/stub :: SQLITE3 BASICS
-#Dec 2020 -- The Time of the Rona
+# Setting the Bar: Shyne Choi, Ella Krechmer, Tina Nguyen
+# SoftDev
+# K16: All About Database - sqlite database
+# 2021-10-21
 
 import sqlite3   #enable control of an sqlite database
 import csv       #facilitate CSV I/O

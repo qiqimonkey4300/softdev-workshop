@@ -1,4 +1,4 @@
-# TNPG: Shyne Choi, Gavin McGinley
+# 5G: Shyne Choi, Gavin McGinley
 # SoftDev
 # K19 -- A RESTful Journey Skyward / Rest APIs & Flask
 # 2021-11-23

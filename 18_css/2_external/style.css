@@ -1,0 +1,56 @@
+body {
+  background-color:gray;
+  font-size:large;
+  font-family:arial;
+}
+
+h1 {
+  text-align:center;
+  color:white;
+  background-color:lightgray;
+  height:50px;
+  font-size:40px;
+}
+
+h3 {
+  position:absolute;
+  left:2%;
+}
+
+li {
+  font-weight:bold;
+  position:absolute;
+  color:gray;
+  height:50px;
+  left:2%;
+}
+
+a {
+  color:white;
+  text-decoration:none;
+}
+
+h2 {
+  position:absolute;
+  left:25%;
+}
+
+p {
+  position:absolute;
+  left:25%;
+  top:22.5%;
+  margin-right:2%;
+}
+
+h4 {
+  color:gray;
+  text-align:right;
+  width:98%;
+  background-color:black;
+  opacity:25%;
+  position:absolute;
+  top:75%;
+  padding-top:1%;
+  padding-bottom:1%;
+  padding-right:1%;
+}

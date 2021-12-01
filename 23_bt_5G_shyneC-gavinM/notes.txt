@@ -1,0 +1,18 @@
+5G: Shyne Choi & Gavin McGinley
+SoftDev
+K23 -- No. 2? / Bootstrap interaction
+2021-12-02
+time spent:
+
+DISCO
+- Two CDNs are linked at the top. 
+- Class types basically control everything.
+
+QCC
+- User interaction is easier to use. 
+
+Q0
+- 
+
+Q1
+- 

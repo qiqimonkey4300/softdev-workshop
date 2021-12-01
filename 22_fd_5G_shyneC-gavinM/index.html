@@ -1,41 +1,102 @@
 <!doctype html>
 
-<!-- HEADING -->
+<!--
+    5G: Shyne Choi & Gavin McGinley
+    SoftDev
+    K22 -- Who Does Frame Work For? / Foundation Intro
+    2021-12-01
+    time spent: 1.5
+-->
 
 <html lang="en-US">
   <head>
 
     <meta charset="utf-8" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Foundation Starter Template</title>
+    <title>Foundation Introduction</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/css/foundation.min.css" crossorigin="anonymous">
+
+    <style>
+      body {
+        margin:1%;
+        background-color:#e4e3fb;
+      }
+
+      h3 {
+        color:#063799;
+      }
+    </style>
+
+
   </head>
 
 
   <body>
     <h1>5G: Shyne Choi & Gavin McGinley</h1>
 
-    <!-- Main Outline: -->
     <h3>Menu Types</h3>
-      <!-- Accordian, dropdown, drilldown, menu, responsive menu -->
       <!-- Maybe use one at the top and just explain it more in depth here -->
-    <h3>Submissions</h3>
-      <!-- Forms, Abide, Slider, buttons -->
-    <h3>Formatting</h3>
-      <!-- Equalizer, Flex Grid, Grid, Top Bar   -->
+    Here you see something known as
+    <a href="https://get.foundation/sites/docs/kitchen-sink.html#tabs" style="color:#49ef3f; text-decoration:underline;">TABS</a>
 
-    <div class="grid-x grid-margin-x" data-equalizer data-equalize-on="medium" id="test-eq">
+    <div class="docs-code-live">
+    <ul class="tabs" data-tabs id="example-tabs">
+      <li class="tabs-title">
+        <a href="#panel1" aria-selected="false" aria-controls="panel1" id="panel1-label">Tab 1</a>
+      </li>
+      <li class="tabs-title">
+        <a href="#panel2" aria-selected="false" aria-controls="panel2" id="panel2-label">Tab 2</a>
+      </li>
+      <li class="tabs-title">
+        <a href="#panel3" aria-selected="false" aria-controls="panel3" id="panel3-label">Tab 3</a>
+      </li>
+    </ul>
+
+    <div class="tabs-content" data-tabs-content="example-tabs">
+      <div class="tabs-panel" id="panel1" role"tabpanel" aria-labelledby="panel1-label" aria-hidden="true">
+        <p>One</p>
+        <p>Check me out! I'm a super cool Tab panel with text content!</p>
+      </div>
+      <div class="tabs-panel" id="panel2" role"tabpanel" aria-labelledby="panel2-label" aria-hidden="true">
+        <p>Two</p>
+        <img class="thumbnail" src="https://www.birthdaywishes.expert/wp-content/uploads/2017/04/Congratulations-You-Did-it-600x600.jpg" alt="congrats!">
+      </div>
+      <div class="tabs-panel" id="panel3" role"tabpanel" aria-labelledby="panel3-label" aria-hidden="true">
+        <p>Three</p>
+        <p>Check me out! I'm an even cooler Tab panel with text content!</p>
+      </div>
+    </div>
+
+    Now if you right-click Tab 2 and inspect, try to activate Tab 2. How? <br>
+    <ol>
+      <li>Find where it says <b>tabs-title</b> in a &lt;li&gt; tag, and change that to <b>tabs-title is-active</b>. <br> </li>
+      <li>Find where it says <b>false</b> in the corresponding &lt;a&gt; tag, and change that to <b>true</b>. <br> </li>
+      Which one is corresponding? All should be labeled with panel#. Make sure to change the right one! <br>
+      <li>Underneath all of the tab rectangles section, there should be another &lt;div&gt; tag that has the class as <b>tabs-content</b>. <br> </li>
+      <li>Find the corresponding &lt;div&gt; inside. Change the class to <b>tabs-panel is-active</b> instead of <b>tabs-panel</b>. CHange aria-hidden to <b>false</b> instead of <b>true</b>. <br> </li>
+      What do you notice?
+    </ol>
+
+    <h3>Submissions</h3>
+      <!-- Forms, Abide, Slider, Buttons -->
+
+    <h3>Formatting</h3>
+    <p>Here's one to get you started</p>
+
+    <div class="grid-x grid-margin-x" data-equalizer data-equalize-on="medium" id="sample_eq">
       <div class="cell medium-4">
         <div class="callout" data-equalizer-watch>
-          <p>It's always nice when there's columns and boxes (without tension) on websites.</p>
+          <p>It's always nice when there's columns and boxes instead of just text straight down on websites.</p>
         </div>
       </div>
       <div class="cell medium-4">
         <div class="callout" data-equalizer-watch>
-          <p>This specific positioning utilizes <a href="https://get.foundation/sites/docs/kitchen-sink.html#equalizer">EQUALIZER</a></p>
+          <p>This specific positioning utilizes
+            <a href="https://get.foundation/sites/docs/kitchen-sink.html#equalizer"
+            style="color:#49ef3f; text-decoration:underline;">EQUALIZER</a>
+          </p>
         </div>
       </div>
       <div class="cell medium-4">

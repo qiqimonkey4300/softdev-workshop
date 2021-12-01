@@ -1,0 +1,8 @@
+5G: Shyne Choi & Gavin McGinley
+SoftDev
+K22 -- Who Does Frame Work For? / Foundation Intro
+2021-12-01
+time spent: 1.5
+
+- CDN link is linked at the top, and all the things can be used without downloading everything.
+- 

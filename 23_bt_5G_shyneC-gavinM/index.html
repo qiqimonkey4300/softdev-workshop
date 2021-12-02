@@ -11,19 +11,174 @@
 <html lang="en-US">
   <head>
 
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/49/Stuyvesant_High_School_logo.svg/1200px-Stuyvesant_High_School_logo.svg.png" alt="Stuyvesant High School Logo" width="30" height="30"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarmakeupDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Makeup of Characters
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#makeup">Brief Explanation</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#headingOne">Pictograph</a></li>
+                <li><a class="dropdown-item" href="#headingTwo">Radicals</a></li>
+                <li><a class="dropdown-item" href="#headingThree">Phonetics</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active"aria-current="page" href="#stroke">Strokes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active"aria-current="page" href="#structure">Structuring</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              5G -- Shyne Choi & Gavin McGinley
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
     <title>Bootstrap Interaction</title>
-
-    <style>
-    </style>
-
 
   </head>
 
 
   <body>
-    <h1>5G: Shyne Choi & Gavin McGinley</h1>
+    <div class="container-xxl my-4 bd-layout">
+      <h1>Intro to Chinese Characters</h1>
+      <p>Many people are intimidated when they first see Chinese characters. Chinese people typically know around 4,000 characters. Completely different characters may also sound the exact same. Each character is one "syllable," and sometimes one character can have multiple pronunciations. Context matters when reading Chinese.</p>
+      <p>Characters are usually strung together as phrases, though each character does usually have its base meaning.</p>
+      <p>It's a pretty complicated language to learn, so here's a couple key things that might make this language feel easier and more approachable.</p>
+    </div>
+
+    <div class="container-xxl my-4 bd-layout">
+      <div class="shadow p-3 mb-3 bg-body rounded">
+        <h3 id="makeup">Makeup of Characters</h3>
+      </div>
+        <!-- put some accordian here: shape(水、火), meaning, sound  -->
+        <p>Many characters can usually be broken up into different parts. It's very interesting to take apart Chinese characters. Here are a few keys.</p>
+        <div class="container-xxl my-4 bd-layout">
+
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Pictograph
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <div>
+                    <strong>Some characters are graphical depictions of their meaning.</strong>
+                    <p>Pictionary is a popular game. Let's play a bit of that right here!</p>
+                    <img src= "https://th.bing.com/th/id/OIP.etGrf5XSDVi6cuqtmhG8owHaE7?pid=ImgDet&rs=1" alt="water">
+                    <p>Try guessing the meaning of this character.</p>
+                    <p>Spoil alert: It means water.</p>
+                    <p>That doesn't look too much like water though...</p>
+                    <div class="spinner-border text-warning" role="status">
+                      <span class="visually-hidden">Loading...</span>
+                    </div>
+                    <p>Such an old language had to have changed over time. It was simplified so that it would be easier to write.</p>
+                    <img src= "https://th.bing.com/th/id/R.d9c37913a961499002379e4b3b638af1?rik=JbRRXPZVbhimiA&riu=http%3a%2f%2fimg.mp.itc.cn%2fupload%2f20170629%2f1cea63962a7249fbb7d1c33c4cb46571_th.jpg&ehk=fVO84riJXO0bj6qMzCR4JM%2bTxIp63S2I9%2fgyY5CuDwQ%3d&risl=&pid=ImgRaw&r=0" alt="pictographWater">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Radicals
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>With pictographs in mind, let's look at this character: 木. This character means wood (it comes from a tree shape).</p>
+                  <p>There are characters with parts that hint at their meaning. 木 is a common part found in characters that have to do with wood/trees. It's a radical.</p>
+                  <p>A couple examples are 果(fruit), 架(shelf/frame), 杯(cup), 枯(wilt)</p>
+                  <p>Now you might think, some of these characters don't seem to have much to do with wood and trees. But they do. For example, in ancient times, shelves and frames were made of wood. And with such an ancient language, it would make sense that it holds to ancient context.</p>
+                  <div class="container-xxl my-3 bd-layout">
+                    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-exclamation-triangle-fill flex-shrink-0 me-2" viewBox="0 0 16 16" role="img" aria-label="Warning:">
+                        <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                      </svg>
+                      DISCLAIMER: Some characters take on multiple meanings as time passes. So, characters like 果 can mean a number of things, depending on how it's used.
+                      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                  </div>
+                  <p>BONUS: 森林 That's a lot of wood. I wonder what these two characters mean..... but where would you find a lot of wood/trees?</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Phonetics
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>Ah, but what if you forget how to read this one character? Or what if you've never seen this character. There's only about 3,999 other characters floating around in your mind. </p>
+                  <p>Do not worry! You might just be able to guess the character. </p>
+                  <p>Some characters have components that actually have a similar sound or are part of a character that has a similar sound.</p>
+                  <p>Let's look at this character: 妈, which means mother. We're going to break this up into its left and right sides: 女 and 马. 女 means female and 马 means horse. (PICTOGRAPHS!! They do look like it!!) So now, the left side makes sense. But what about the right side? 马 has a similar pronunciation to 妈. </p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+    </div>
+
+    <div class="container-xxl my-4 bd-layout">
+      <div class="shadow p-3 mb-3 bg-body rounded">
+        <h3 id="stroke">Strokes</h3>
+      </div>
+      <p>Now, each character are actually made up of mainly eight types of strokes.</p>
+      <p>The eight: horizontal (一), vertical (丨), left-falling (丿), right-falling (丶), rising (lower element of 冫), dot (、), hook (亅), and turning (乛, 乚, 乙, etc.)</p>
+      <p>There are some rules about these strokes that dictate the stroke order of each character.</p>
+      <ul>
+        <li>Horizontal strokes before vertical strokes</li>
+        <li>Left strokes before right strokes</li>
+        <li>Characters are written from top to bottom</li>
+        <li>Characters are written from left to right</li>
+        <li>First the inside of the character, then the outside</li>
+        <li>Middle of the character first, then the sides</li>
+      </ul>
+    </div>
+
+    <div class="container-xxl my-4 bd-layout">
+      <div class="shadow p-3 mb-3 bg-body rounded">
+        <h3 id="structure">Structuring</h3>
+      </div>
+      []
+    </div>
   </body>
 </html>

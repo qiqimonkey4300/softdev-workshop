@@ -5,14 +5,15 @@ K23 -- No. 2? / Bootstrap interaction
 time spent:
 
 DISCO
-- Two CDNs are linked at the top. 
-- Class types basically control everything.
+- Two CDNs are linked at the top.
+- Class types basically take care of most things.
 
 QCC
-- User interaction is easier to use. 
+- Dynamic elements are easier to use.
 
 Q0
-- 
+- No (there were comments in the code, and the layout was easy to understand)
 
 Q1
-- 
+- Bootstrap preferred because it's easier to learn and use.
+- It also makes more sense (to us).

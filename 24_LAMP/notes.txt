@@ -1,0 +1,8 @@
+Michelle Lo, Tami Takada, Shyne Choi, Tina Nyugen
+SoftDev
+K24 -- Cold LAMPin w/Flav - digitalocean: setup droplet, install ubuntu and apache2
+2022-01-11
+time spent: 1
+
+- You can use "sudo" before commands when logged in as a regular user to get superuser priveleges
+- Run curl http://icanhazip.com to get your public IP

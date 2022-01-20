@@ -1,4 +1,4 @@
-Michelle Lo, Tami Takada, Shyne Choi, Tina Nyugen
+Michelle Lo, Tami Takada, Shyne Choi, Tina Nguyen
 SoftDev
 K24 -- Cold LAMPin w/Flav - digitalocean: setup droplet, install ubuntu and apache2
 2022-01-11

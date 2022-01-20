@@ -1,0 +1,9 @@
+Michelle Lo, Tami Takada, Shyne Choi, Tina Nguyen
+SoftDev
+K25 -- Apache, Jump On It - Deploy a Flask app w/Apache
+2022-01-18
+time spent: 1.5
+
+- after installing mod_wsgi, it should already be enabled
+- instead of running sudo apt-get install python-pip, you might have to run sudo apt-get install python3-pip
+- there may be python version issues

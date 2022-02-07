@@ -1,0 +1,20 @@
+short (Emma Buller and Shyne Choi)
+SoftDev
+K27 -- Where Does JS live?
+2022-02-04
+time spent: 30
+
+DISCO
+-----------------------------------------------------------------
+* You don't need the square brackets when writing if statements
+* leaving nth as starting from zero
+* semicolons are needed to separate statements
+=================================================================
+
+QCC
+-----------------------------------------------------------------
+* What languages does Atom recognize? It doesn't colorcode Scheme and that makes us sad.
+* To run JavaScript files, we insert the file through a script tag in the HTML file and then we run the functions on the console
+* The syntax is fxnName(args)
+* Before running functions in the Google Chrome console, you can see the output. Does this exist in other browsers?
+================================================================

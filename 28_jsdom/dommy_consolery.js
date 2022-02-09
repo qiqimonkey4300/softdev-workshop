@@ -78,8 +78,7 @@ var fib = function(n) {
   return fib(n - 1) + fib(n - 2)
 }; //semicolons at the end of function definitions!
 
-var fibNum = document.getElementById("fibresult"); //match ID
-fibNum.innerHTML = "Fibonacci Sequence 5th number: " + fib(4);
+document.getElementById("fibresult").innerHTML = "Fibonacci Sequence 5th number: " + fib(4);
 
 
 // FAC
@@ -90,8 +89,7 @@ var fact = function(n) {
   return n * fact(n - 1);
 };
 
-var factNum = document.getElementById("factresult");
-factNum.innerHTML = "8! = " + fact(8);
+document.getElementById("factresult").innerHTML = "8! = " + fact(8);
 
 
 // GCD
@@ -110,5 +108,4 @@ var gcd = function(a, b) {
   return x;
 };
 
-var GCD = document.getElementById("gcdresult");
-GCD.innerHTML = "GCD of 60 and 30: " + gcd(60, 30);
+document.getElementById("gcdresult").innerHTML = "GCD of 60 and 30: " + gcd(60, 30);

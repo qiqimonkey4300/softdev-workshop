@@ -1,0 +1,10 @@
+short :: Emma Buller, Shyne Choi
+SoftDev pd1
+K28 -- Getting more comfortable with the dev console and the DOM
+2022-02-08
+time spent: 30
+--------------------------------------------------
+
+- semicolons can go at the end of function definitions
+- blue, then green, then red
+- there are different types in one dictionary

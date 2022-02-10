@@ -1,0 +1,10 @@
+Shriya Anand, Shyne Choi
+SoftDev pd1
+K29 -- DOMfoolery++, More DOM w/buttons
+2022-02-09
+time spent: 30
+--------------------------------------------------
+
+- we can move the document.getElementById line to inside a display function
+- call corresponding display functions with appropriate button pressing: .addEventListener('click', displayfxn)
+- how would we "unclick"?

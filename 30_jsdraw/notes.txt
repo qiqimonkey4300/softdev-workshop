@@ -1,0 +1,10 @@
+short :: Emma Buller, Shyne Choi
+SoftDev pd1
+K30 -- canvas based JS drawing
+2022-02-14
+time spent: 30
+--------------------------------------------------
+
+- offsetX and offsetY are for mouse position
+- we can rewrite var toggleMode = function(e) as var toggleMode = (e) =>
+- if one beginPath (or new Path2D()), one must closePath

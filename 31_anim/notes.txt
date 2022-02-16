@@ -1,0 +1,11 @@
+short :: Emma Buller, Shyne Choi
+SoftDev pd1
+K31 -- canvas based JS animation
+2022-02-15
+time spent: 30
+--------------------------------------------------
+
+- Our commitment to detail means team color aqua
+- Check growing to see if add to radius or subtract from
+- requestID is set to the result of requestAnimationFrame(drawDot), which we can pass into cancelAnimationFrame
+- all we need in stopIt is cancelAnimationFrame(requestID)

@@ -19,9 +19,11 @@ var toggleMode = (e) => { //changes mode btwn rect and circ
   console.log("toggling...");
   if (mode === "rect") {
     mode = "circ"
+    buttonToggle.innerHTML = "Circle";
   }
   else {
     mode = "rect"
+    buttonToggle.innerHTML = "Rectangle";
   }
   // console.log(mode);
 };
@@ -46,6 +48,12 @@ var drawRect = function(e) {
 var drawCircle = (e) => {
   var mouseX = e.offsetX;
   var mouseY = e.offsetY;
+  ctx.fillStyle = "red";
+  ctx.strokeStyle = "black";
+  var fillingCircle = new Path2D();
+  fillingCircle.arc(mouseX, mouseY,50,0, Math.PI * 2);
+  ctx.fill(fillingCircle);
+  ctx.stroke(fillingCircle);
   console.log("mouseclick registered at ", mouseX, mouseY);
 }
 
@@ -58,12 +66,12 @@ var draw = (e) => {
   }
 }
 
-// var wipeCanvas = () => {
-//
-// }
-//
+var wipeCanvas = () => {
+  ctx.clearRect(0,0,600,600);
+}
+
 c.addEventListener("click", draw);
-// var bToggler = doccument. ;
-// bToggler. ;
-// var clearB = ;
-// clearB. ;
+var bToggler = document.getElementById("buttonToggle") ;
+bToggler.addEventListener("click",toggleMode) ;
+var clearB = document.getElementById("buttonClear");
+clearB.addEventListener("click",wipeCanvas);

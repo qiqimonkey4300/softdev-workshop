@@ -1,0 +1,11 @@
+short :: Emma Buller, Shyne Choi
+SoftDev pd1
+K32 -- canvas based JS animation
+2022-02-15
+time spent: 30
+--------------------------------------------------
+
+- start from k31 code
+- keep track of both its position and velocity components
+- keep moving position by velocity
+- when the DVD logo is at the boundaries of the canvas, make the appropriate velocity component its opposite

@@ -1,0 +1,14 @@
+Shyne Choi
+SoftDev
+K36 -- Another DB Perspective - Chapter 2
+2022-05-02
+time spent: 1
+
+- uses JSON: {"key1":"value1", "key2":"value2"}
+JavaScript Standard Object Notation
+- BSON (Binary JSON)
+- JSON: mongoimport/mongoexport VS BSON: mongorestore/mongodump
+- URI: Uniform Resource Identifier, srv establishes secure connection
+--dump
+- db.zips.find({"state": "NY"})
+-it command: iterate thru cursor

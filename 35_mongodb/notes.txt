@@ -1,0 +1,9 @@
+Shyne Choi
+SoftDev
+K35 -- Another DB Perspective - Chapter 1
+2022-05-02
+time spent: 1
+
+- noSQL documentDB (field-value pairs) stored in collections
+- Atlas uses clusters (groups of servers to store data)
+- replica set: connected MongoDB instances that store same data
